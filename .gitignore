@@ -1,0 +1,83 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+poetry.lock
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media
+staticfiles/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+
+# Vue/JS
+.DS_Store
+dist/
+dist-ssr/
+coverage/
+.nuxt/
+.next/
+.vite/
+.cache/
+.output/
+
+# Editor directories and files
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Local development
+.pytest_cache/
+.coverage
+htmlcov/
+coverage/
+.eslintcache
+.stylelintcache
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Virtual environments
+venv/
+env/
+ENV/
+.python-version
+.venv

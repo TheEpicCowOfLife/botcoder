@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "botcoder-backend"
+version = "0.1.0"
+description = "Backend for Botcoder AI Game Tournament Platform"
+authors = ["Your Name <your.email@example.com>"]
+package-mode=false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^5.0.1"
+djangorestframework = "^3.14.0"
+django-cors-headers = "^4.3.1"
+psycopg2-binary = "^2.9.9"
+python-dotenv = "^1.0.0"
+django-rest-knox = "^4.2.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.1.1"
+flake8 = "^7.0.0"
+pre-commit = "^3.6.0"
+pytest = "^8.0.0"
+pytest-django = "^4.8.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+include = '\.pyi?$'
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "botcoder.settings"
+python_files = ["tests.py", "test_*.py", "*_test.py"] 
